@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+:root{
+    --DarkBlue_DarkMode: hsl(209, 23%, 22%);
+    --VeryDarkBlueDarkModeBackground: hsl(207, 26%, 17%);
+    --VeryDarkBlueLightModeText: hsl(200, 15%, 8%);
+    --white: hsl(0, 0%, 52%);
+    --VeryLightGrayLightModeBackground: hsl(0, 0%, 98%);
+    --WhiteDarkModeTextLight: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.navbarBg{
+    background: var(--DarkBlue_DarkMode) !important;
+}
+
+.navbar-brand{
+    color: #ffff !important;
+    font-size: 25px !important;
+    font-weight: 600 !important;
+}
+.mainContainer{
+    background: var(--VeryDarkBlueDarkModeBackground);
+}
+
+.inputBg{
+    width: 70% !important;
+    background: var(--DarkBlue_DarkMode) !important;
+    border: none !important;
+    color: #ffff !important;
+}
+.inputBg:focus{
+    outline: none !important;
+}
+
+.fa-search{
+    position: absolute;
+    top: 33%;
+    left: 4%;
+    color: #ffff !important;
+    transform: translate(-50%, -50%);
+}
+.dropdownBtn{
+    background-color: var(--DarkBlue_DarkMode) !important;
+    color: var(--VeryLightGrayLightModeBackground) !important;
+}
+.myCard{
+    max-width: 300px;
+    border-radius: 15px !important;
+    background: var(--DarkBlue_DarkMode) !important;
+    color: var(--VeryLightGrayLightModeBackground) !important;
+    box-shadow: 3px 2px 7px 1px var(--VeryDarkBlueDarkModeBackground);
+}
+
+.card_image img{
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+.darkModeBtn{
+    color: #ffff !important;
+}
+ 
+/* style for darkMode */
+
+.fa-searchDarkMode {
+    color: black !important;
+}
+.mainContainerDarkMode {
+    background: var(--VeryLightGrayLightModeBackground);
+}
+
+.inputBgDarkMode {
+    background: var(--WhiteDarkModeTextLight) !important;
+    color: black !important;
+}
+.navbar-brandDarkMde {
+    color: black !important;
+}
+.navbarBgDarkMode {
+    background: var(--VeryLightGrayLightModeBackground) !important;
+}
+.cardDarMode{
+    background: var(--WhiteDarkModeTextLight) !important;
+    color: black !important;
+}
+.myCardDarkMode{
+    background: var(--WhiteDarkModeTextLight) !important;
+    color: black !important;
+    box-shadow: 3px 2px 7px 1px var(--VeryDarkBlueDarkModeBackground);
+}
+.dropdownBtnDarkMode {
+    background-color: var(--WhiteDarkModeTextLight) !important;
+    color:black !important;
+}
+.darkModeBtnDark{
+    color: black !important;
+}
+
+
+/* responsive  */
+
+
+@media only screen and (max-width:600px) {
+    .navbar-brand{
+        font-size: 18px !important;  
+    }
+    .inputBg{
+        width: 100% !important;
+    }
+    .fa-search{
+    top: 33%;
+    left: 9%;
+    color: #ffff !important;
+    transform: translate(-50%, -50%);
+}
+}
